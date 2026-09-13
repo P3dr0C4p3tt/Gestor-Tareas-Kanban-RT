@@ -1,37 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📋 Nombre de tu Proyecto (Kanban Board)
 
-## Getting Started
+Una aplicación web de gestión de tareas y tableros interactivos con control de acceso basado en roles (RBAC) en tiempo real.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Características Principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Tableros Interactivos:** Creación de listas y tarjetas con drag-and-drop persistente.
+* **Sistema RBAC (Roles):** Control de permisos multinivel (`OWNER`, `ADMIN`, `MEMBER`, `VIEWER`).
+* **Gestión de Miembros:** Modal dinámico para enviar invitaciones por correo, actualizar roles y remover usuarios.
+* **Autenticación Segura:** Integración con Auth.js y proveedores como GitHub OAuth.
+* **Seguridad en Backend:** Server Actions con validación estricta de permisos en base de datos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologías Utilizadas
 
-## Learn More
+| Categoría | Tecnología |
+| :--- | :--- |
+| **Framework** | Next.js (App Router) |
+| **Lenguaje** | TypeScript |
+| **Estilos** | Tailwind CSS / Lucide Icons |
+| **Base de Datos** | Prisma ORM & PostgreSQL |
+| **Autenticación** | Auth.js (NextAuth) |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Instalación y Configuración Local
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Gestor-Tareas-Kanban-RT
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+   cd tu-repositorio
