@@ -6,21 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.3.4",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "@auth/prisma-adapter": "^2.11.3",
+    "@hello-pangea/dnd": "^18.0.1",
+    "@prisma/client": "^6.19.3",
+    "next-auth": "^5.0.0-beta.32",
+    "sonner": "^2.0.8"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true,
+    "msgpackr-extract@3.0.4": true,
+    "workerd@1.20260704.1": true
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.4",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.4.1",
+    "@types/react": "19.2.18",
+    "postcss": "^8.5.26",
+    "prisma": "^6.19.3",
+    "typescript": "7.0.2"
   }
 }
