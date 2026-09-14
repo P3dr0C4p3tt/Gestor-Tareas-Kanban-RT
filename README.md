@@ -36,4 +36,21 @@ Una aplicación web de gestión de tareas y tableros interactivos con control de
    ```bash
    npm install
 
-3. 
+3. **Configurar variables de entorno**
+   En base al archivo ejemplo.env.txt crea tu propio archivo .env con las variables de entorno de la base de datos
+
+   DATABASE_URL: Tu cadena de conexión a tu base de datos PostgreSQL o MySQL de preferencia.
+
+   AUTH_SECRET: Una clave secreta para la sesión (puedes generar una ejecutando npx auth secret).
+
+   AUTH_GITHUB_ID y AUTH_GITHUB_SECRET: Obtén estas claves registrando una nueva OAuth App en los ajustes de desarrollador de GitHub.
+
+4. **Sincronizar la base de datos**
+   ```bash
+   npx prisma db push
+
+5. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+
+6. Abre http://localhost:3000 en tu navegador.
