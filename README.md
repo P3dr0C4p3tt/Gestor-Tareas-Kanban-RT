@@ -30,5 +30,10 @@ Una aplicación web de gestión de tareas y tableros interactivos con control de
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-   cd tu-repositorio
+   git clone https://github.com/P3dr0C4p3tt/Gestor-Tareas-Kanban-RT.git
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+
+3. 
