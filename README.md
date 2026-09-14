@@ -1,4 +1,4 @@
-# 📋 Nombre de tu Proyecto (Kanban Board)
+# 📋 Gestor de Tareas Kanban RT 
 
 Una aplicación web de gestión de tareas y tableros interactivos con control de acceso basado en roles (RBAC) en tiempo real.
 
