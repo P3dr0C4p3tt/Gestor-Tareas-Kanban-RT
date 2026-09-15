@@ -92,7 +92,6 @@ export async function removeBoardMember(boardId: string, targetUserId: string) {
   const session = await auth();
   if (!session?.user?.id) return { success: false, error: "No autorizado." };
 
-  // Prevenir que un usuario se elimine a sí mismo
   if (targetUserId === session.user.id) {
     return { success: false, error: "No puedes eliminarte a ti mismo del tablero." };
   }

@@ -253,7 +253,7 @@ export function KanbanBoard({ boardId, initialColumns, userRole = "MEMBER", }: K
                         key={card.id}
                         draggableId={card.id}
                         index={index}
-                        isDragDisabled={!isEditor} // 2. Deshabilitar arrastre de tarjetas para VIEWER
+                        isDragDisabled={!isEditor}
                       >
                         {(provided, snapshot) => (
                           <div
@@ -311,7 +311,6 @@ export function KanbanBoard({ boardId, initialColumns, userRole = "MEMBER", }: K
             </div>
           ))}
 
-          {/* 5. Ocultar el formulario de creación de columnas */}
           {isEditor && <CreateColumnForm boardId={boardId} />}
         </div>
       </DragDropContext>

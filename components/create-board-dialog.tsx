@@ -1,4 +1,3 @@
-// components/create-board-dialog.tsx
 "use client";
 
 import { useState } from "react";
@@ -17,7 +16,6 @@ export function CreateBoardDialog() {
 
     if (result.success && result.boardId) {
       setIsOpen(false);
-      // Opcional: Redirigir directamente al nuevo tablero creado
       router.push(`/board/${result.boardId}`);
     } else {
       alert(result.error || "Error al crear el tablero");

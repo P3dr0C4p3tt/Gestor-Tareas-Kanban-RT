@@ -44,7 +44,7 @@ export function CreateColumnForm({ boardId }: { boardId: string }) {
           onChange={(e) => setName(e.target.value)}
           placeholder="Nombre de la columna..."
           autoFocus
-          className="w-full px-2.5 py-1.5 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <div className="flex items-center space-x-2">
           <button

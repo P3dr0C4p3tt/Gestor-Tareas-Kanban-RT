@@ -1,4 +1,3 @@
-// app/dashboard/dashboard-client.tsx
 "use client";
 
 import { useState } from "react";
@@ -93,7 +92,6 @@ export function DashboardClient({ boards, user }: { boards: Board[]; user: UserP
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {/* Tarjeta de Crear Tablero Rápido */}
           <button
             onClick={() => setIsModalOpen(true)}
             className="h-32 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-500 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50/30 transition-all group"
@@ -104,7 +102,6 @@ export function DashboardClient({ boards, user }: { boards: Board[]; user: UserP
             <span className="text-xs font-medium mt-1">Crear nuevo tablero</span>
           </button>
 
-          {/* Lista de Tableros */}
           {boards.map((board) => {
             const totalCards = board.columns.reduce(
               (acc, col) => acc + (col.tasks?.length || col.cards?.length || 0),

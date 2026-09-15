@@ -1,4 +1,3 @@
-// app/board/[boardId]/not-found.tsx
 import Link from "next/link";
 
 export default function BoardNotFound() {

@@ -14,7 +14,6 @@ export default async function LoginPage({
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <div className="max-w-md w-full bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center space-y-6">
         
-        {/* Mensaje si se canceló la autenticación */}
         {error && (
           <div className="p-3 bg-red-50 border border-red-200 text-red-600 text-xs rounded-lg">
             Se canceló el inicio de sesión. Por favor, intenta de nuevo.
@@ -29,7 +28,6 @@ export default async function LoginPage({
         </div>
 
         {session?.user ? (
-          /* Opciones cuando YA EXISTE una sesión activa */
           <div className="space-y-4 pt-2">
             <div className="flex items-center gap-3 p-3 bg-gray-50 border rounded-lg text-left">
               {session.user.image && (
@@ -66,11 +64,9 @@ export default async function LoginPage({
               </button>
             </form>
 
-            {/* Opción 2: Cerrar sesión e iniciar con otra cuenta */}
             <form
               action={async () => {
                 "use server";
-                // Forzamos el cierre de sesión y la redirección con re-autenticación de GitHub
                 await signOut({ redirectTo: "/login" });
               }}
             >
@@ -83,7 +79,6 @@ export default async function LoginPage({
             </form>
           </div>
         ) : (
-          /* Botón estándar de inicio de sesión */
           <form
             action={async () => {
               "use server";

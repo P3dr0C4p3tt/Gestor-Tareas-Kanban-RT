@@ -66,7 +66,6 @@ export function CardModal({ card, boardId, isOpen, onClose }: CardModalProps) {
           <input type="hidden" name="cardId" value={card.id} />
           <input type="hidden" name="boardId" value={boardId} />
 
-          {/* Título de la tarjeta */}
           <div>
             <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
               Título
@@ -80,7 +79,6 @@ export function CardModal({ card, boardId, isOpen, onClose }: CardModalProps) {
             />
           </div>
 
-          {/* Descripción */}
           <div>
             <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
               Descripción
@@ -93,9 +91,7 @@ export function CardModal({ card, boardId, isOpen, onClose }: CardModalProps) {
             />
           </div>
 
-          {/* Prioridad y Fecha de Vencimiento */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {/* Prioridad */}
               <div>
                 <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
                   Prioridad
@@ -112,7 +108,6 @@ export function CardModal({ card, boardId, isOpen, onClose }: CardModalProps) {
                 </select>
               </div>
 
-              {/* Etiqueta */}
               <div>
                 <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
                   Etiqueta
@@ -132,7 +127,6 @@ export function CardModal({ card, boardId, isOpen, onClose }: CardModalProps) {
                 </select>
               </div>
 
-              {/* Fecha de Vencimiento */}
               <div>
                 <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
                   Vencimiento

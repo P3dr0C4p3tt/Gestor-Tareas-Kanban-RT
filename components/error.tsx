@@ -1,4 +1,3 @@
-// app/board/[boardId]/error.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -11,7 +10,6 @@ interface ErrorProps {
 
 export default function BoardError({ error, reset }: ErrorProps) {
   useEffect(() => {
-    // Registrar el error en un servicio de telemetría si es necesario
     console.error("Error capturado en el tablero:", error);
   }, [error]);
 

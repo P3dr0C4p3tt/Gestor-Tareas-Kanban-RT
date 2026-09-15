@@ -42,7 +42,7 @@ export function CreateCardForm({ columnId, boardId }: CreateCardFormProps) {
         required
         autoFocus
         placeholder="Escribe un título para esta tarjeta..."
-        className="w-full p-2 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none bg-white"
+        className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
         rows={2}
       />
       <input type="hidden" name="columnId" value={columnId} />

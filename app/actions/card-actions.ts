@@ -21,12 +21,10 @@ export async function createCard(formData: FormData) {
   }
 
   try {
-    // 1. Obtener el número actual de tarjetas en la columna para asignar el orden al final
     const cardsCount = await prisma.task.count({
       where: { columnId },
     });
 
-    // 2. Crear la tarjeta
     await prisma.task.create({
       data: {
         title: title.trim(),
@@ -36,7 +34,6 @@ export async function createCard(formData: FormData) {
       },
     });
 
-    // 3. Revalidar la vista del tablero para reflejar los cambios
     revalidatePath(`/board/${boardId}`);
 
     return { success: true };
@@ -50,7 +47,6 @@ export async function updateCardOrder(
   boardId: string
 ) {
   try {
-    // Actualización por lotes en la base de datos
     const updates = cards.map((card) =>
       prisma.task.update({
         where: { id: card.id },
